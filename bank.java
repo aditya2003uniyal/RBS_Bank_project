@@ -1,9 +1,16 @@
-package RBS_Bank_project;
+package  RBS_Bank_project;
 
-public class bank {
+public class Bank {
     
-    int account_number;  //attributes
-    double balance;
+    public int account_number;  //attributes
+    public double balance;
+    //constructor
+    
+    public Bank(int account_number,double balance){
+        this.account_number = account_number;   // this -> refers to current class instance variable
+        this.balance = balance;
+    } 
+
 
     public void deposit_amount(double amount){  //method to deposit amount
      
